@@ -1,0 +1,7 @@
+LIBRARY Control
+
+;EXPORTS 
+		;ExportedFunctionName1
+		;ExportedFunctionName2
+		;ExportedFunctionName3
+		;etc

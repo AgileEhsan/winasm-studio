@@ -36,7 +36,7 @@ ENDIF
 IncludeLib ADVAPI32.LIB	; required by htmlhelp
 ;IncludeLib htmlhelp.lib
 
-Include \WinAsm\Inc\WAAddIn.inc
+Include .\Inc\WAAddIn.inc
 
 
 IDR_ACCELERATOR		EQU 100

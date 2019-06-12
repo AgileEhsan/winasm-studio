@@ -1,0 +1,25 @@
+[PROJECT]
+Type=2
+ReleaseCommandLine=
+DebugCommandLine=
+[MAKE]
+ActiveBuild=0
+CompileRC=/v
+RCToObj=
+Assemble=/c /coff /Cp /nologo
+Link=/SUBSYSTEM:CONSOLE /RELEASE /VERSION:4.0
+Out=
+DebAssemble=/c /coff /Cp /nologo /Fm /Zi /Zd
+DebLink=/SUBSYSTEM:CONSOLE /DEBUG /VERSION:4.0
+DebOut=
+[SHOWFILE]
+3=-4
+4=-23
+5=531
+6=498
+1=1
+2=1
+7=1
+[FILES]
+1=Console.Asm
+2=Console.Inc

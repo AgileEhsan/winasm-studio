@@ -1,0 +1,94 @@
+
+#define					IDB_TOOLBAR				51
+#define					IDR_MAINMENU			101
+#define					IDR_CHILDMENU			102
+#define					IDM_FILE_NEW			201
+#define					IDM_FILE_OPEN			202
+#define					IDM_FILE_CLOSE			203
+#define					IDM_FILE_SAVE			204
+#define					IDM_FILE_SAVEAS			205
+#define					IDM_FILE_SETUP			206
+#define					IDM_FILE_PREVIEW		207
+#define					IDM_FILE_PRINT			208
+#define					IDM_FILE_MRU			209
+#define					IDM_FILE_EXIT 			210
+#define					IDM_EDIT_CUT			211
+#define					IDM_EDIT_COPY			212
+#define					IDM_EDIT_PASTE			213
+#define					IDM_EDIT_DELETE			216
+#define					IDM_VIEW_TOOLBAR		217
+#define					IDM_VIEW_STATUS			218
+#define					IDM_WIN_TILEHORZ		229
+#define					IDM_WIN_TILEVERT		230
+#define					IDM_WIN_CASCADE			231
+#define					IDM_HELP_CONTENTS		232
+#define					IDM_HELP_ABOUT			233
+#define					ID_TOOLBAR				250
+
+IDB_TOOLBAR		BITMAP  DISCARDABLE	"IDB_TOOLBAR.bmp"
+
+IDR_MAINMENU 	MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",			IDM_FILE_NEW
+        MENUITEM "&Open",			IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",			IDM_FILE_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "View Toolbar",	IDM_VIEW_TOOLBAR
+        MENUITEM "View Statusbar",	IDM_VIEW_STATUS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Contents",		IDM_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "About",			IDM_HELP_ABOUT
+    END
+END
+
+IDR_CHILDMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",			IDM_FILE_NEW
+        MENUITEM "&Open",			IDM_FILE_OPEN
+        MENUITEM "&Close",			IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",			IDM_FILE_SAVE
+        MENUITEM "Save &As...",		IDM_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Print Setup",		IDM_FILE_SETUP
+        MENUITEM "Print Preview",	IDM_FILE_PREVIEW
+        MENUITEM "&Print",			IDM_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",			IDM_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cut",				IDM_EDIT_CUT, GRAYED
+        MENUITEM "Copy",			IDM_EDIT_COPY, GRAYED
+        MENUITEM "Paste",			IDM_EDIT_PASTE, GRAYED
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "View Toolbar",	IDM_VIEW_TOOLBAR
+        MENUITEM "View Statusbar",	IDM_VIEW_STATUS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "Tile Horizontal",	IDM_WIN_TILEHORZ
+        MENUITEM "Tile Vertical",	IDM_WIN_TILEVERT
+        MENUITEM "Cascade",			IDM_WIN_CASCADE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Contents",		IDM_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "About",			IDM_HELP_ABOUT
+    END
+END
+
+

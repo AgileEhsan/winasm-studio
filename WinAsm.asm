@@ -1,4 +1,4 @@
-.386
+.486
 
 .MODEL FLAT,STDCALL
 
